@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -6,6 +6,7 @@ import java.sql.SQLException;
 @SuppressWarnings("NonAsciiCharacters")
 public class Подключение {
   Connection соединение;
+
   public Подключение(Connection соединение) {
     this.соединение = соединение;
   }
@@ -21,6 +22,7 @@ public class Подключение {
   public void включитьАвтоПрименение() throws ИсключениеЯСЗ {
     установитьЗначениеАвтоматическогоПрименения(true);
   }
+
   public void выключитьАвтоПрименение() throws ИсключениеЯСЗ {
     установитьЗначениеАвтоматическогоПрименения(false);
   }

@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 @SuppressWarnings("NonAsciiCharacters")
 public class Класс {
@@ -8,5 +8,9 @@ public class Класс {
     } catch (ClassNotFoundException e) {
       throw new ИсключениеКлассНеНайден(имя, e);
     }
+  }
+
+  public static Class<?> поЭкземпляру(Object объект) {
+    return объект.getClass();
   }
 }

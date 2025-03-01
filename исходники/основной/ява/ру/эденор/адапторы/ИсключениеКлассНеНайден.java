@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 @SuppressWarnings("NonAsciiCharacters")
 public class ИсключениеКлассНеНайден extends ClassNotFoundException {

@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 import java.io.InputStream;
 import java.io.PrintStream;
@@ -7,9 +7,11 @@ public class Система {
   public static InputStream ввод = System.in;
   public static PrintStream вывод = System.out;
   public static PrintStream ошибка = System.err;
+
   public static long времяСейчас() {
     return System.currentTimeMillis();
   }
+
   public static void выйти(int код) {
     System.exit(код);
   }

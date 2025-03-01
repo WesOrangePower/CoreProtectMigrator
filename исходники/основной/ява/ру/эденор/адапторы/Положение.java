@@ -1,11 +1,10 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 @SuppressWarnings("NonAsciiCharacters")
-public class Положение implements AutoCloseable{
+public class Положение implements AutoCloseable {
   private final Statement положение;
 
   public Положение(Statement положение) {

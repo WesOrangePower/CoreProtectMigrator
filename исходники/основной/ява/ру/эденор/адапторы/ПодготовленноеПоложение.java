@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

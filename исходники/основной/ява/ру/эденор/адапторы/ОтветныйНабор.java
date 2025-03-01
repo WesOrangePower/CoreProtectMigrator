@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,7 +20,7 @@ public class ОтветныйНабор implements AutoCloseable {
     }
   }
 
-  public boolean следующий() throws ИсключениеЯСЗ{
+  public boolean следующий() throws ИсключениеЯСЗ {
     try {
       return ответныйНабор.next();
     } catch (SQLException e) {

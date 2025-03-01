@@ -1,11 +1,10 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 @SuppressWarnings("NonAsciiCharacters")
 public class СтрочныйСтроитель {
   private final StringBuilder builder = new StringBuilder();
 
-  public СтрочныйСтроитель() {
-  }
+  public СтрочныйСтроитель() {}
 
   public СтрочныйСтроитель(String начальноеЗначение) {
     builder.append(начальноеЗначение);
