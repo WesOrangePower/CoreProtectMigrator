@@ -61,4 +61,12 @@ public class Строки {
   public static String отформатировать(String строка, Object... аргументы) {
     return String.format(строка, аргументы);
   }
+
+  public static String[] разбить(String строка, String разделитель) {
+    return строка.split(разделитель);
+  }
+
+  public static boolean равныБезРегистра(String строка, String другая) {
+    return строка.equalsIgnoreCase(другая);
+  }
 }

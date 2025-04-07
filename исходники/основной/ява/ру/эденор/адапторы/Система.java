@@ -3,6 +3,7 @@ package ру.эденор.адапторы;
 import java.io.InputStream;
 import java.io.PrintStream;
 
+@SuppressWarnings("NonAsciiCharacters")
 public class Система {
   public static InputStream ввод = System.in;
   public static PrintStream вывод = System.out;
@@ -38,5 +39,9 @@ public class Система {
 
   public static void ошибкастр(String строка) {
     ошибка.println(строка);
+  }
+
+  public static String прочитатьСтроку() {
+    return new java.util.Scanner(ввод).nextLine();
   }
 }

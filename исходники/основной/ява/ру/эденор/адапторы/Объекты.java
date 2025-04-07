@@ -1,4 +1,4 @@
-package ру.эденор;
+package ру.эденор.адапторы;
 
 public class Объекты {
   public static boolean естьНеПустые(Object... объекты) {
